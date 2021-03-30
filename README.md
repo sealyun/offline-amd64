@@ -1,1 +1,1 @@
-# offline-amd64
+# offline

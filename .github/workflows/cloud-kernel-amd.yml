@@ -15,6 +15,13 @@ jobs:
           ak: ${{ secrets.AK }}
           sk: ${{ secrets.SK }}
           token: ${{ secrets.MARKETCTL }}
+          SEALOS_VERSION: 3.3.9-rc.2
+          MARKET_CTL_VERSION: ""
+          SSH_CMD_VERSION: ""
+          NERD_CTL_VERSION: ""
+          CRI_CTL_VERSION: ""
+          DOCKER_VERSION: ""
+          CONTAINERD_VERSION: ""
         run: |
           CLOUD_URL=$(curl -LsSf https://api.github.com/repos/sealyun/cloud-kernel/releases/latest | jq -r ".assets[0].browser_download_url")
           wget -c $CLOUD_URL -O cloud-kernel && chmod +x cloud-kernel

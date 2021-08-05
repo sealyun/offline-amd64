@@ -15,7 +15,7 @@ jobs:
           ak: ${{ secrets.AK_HW }}
           sk: ${{ secrets.SK_HW }}
           token: ${{ secrets.MARKETCTL_ARM }}
-          SEALOS_VERSION: 3.3.9-rc.4
+          SEALOS_VERSION: 3.3.9-rc.5
           MARKET_CTL_VERSION: ""
           SSH_CMD_VERSION: ""
           NERD_CTL_VERSION: ""
